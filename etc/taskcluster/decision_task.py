@@ -46,6 +46,7 @@ def tasks(task_for):
             "try": all_tests,
             "try-taskcluster": [
                 # Add functions here as needed, in your push to that branch
+                linux_tidy_unit, linux_docs_check, linux_wpt,
             ],
             "master": [
                 upload_docs,
